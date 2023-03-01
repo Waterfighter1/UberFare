@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">The Uber Fare App</string>
+    <string name="mile_hint">20</string>
+    <string name="mile_label">Please Enter The Estimated Miles For Trip Below:</string>
+    <string name="mile_label_val">Estimated Miles:</string>
+    <string name="car_label">Please Select The Desired Car Below:</string>
+    <string name="car_label_val">Selected Car: </string>
+    <string name="total_label">Estimated Total: </string>
+
+
+    <string name="btn_continue">CONTINUE</string>
+    <string name="btn_back">BACK</string>
+
+    <string-array name="cars_choices">
+        <item> Traditional Sedan </item>
+        <item> Smart Car ($2 Fee)</item>
+        <item> Minivan ($5 Fee)</item>
+    </string-array>
+</resources>
