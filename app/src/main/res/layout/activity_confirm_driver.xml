@@ -25,53 +25,43 @@
         app:layout_constraintVertical_bias="0.02" />
 
     <TextView
-        android:id="@+id/txt_mile"
-        android:layout_width="310dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="@string/mile_label_val"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/txt_car"
-        android:layout_width="313dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="68dp"
-        android:gravity="center"
-        android:text="@string/car_label_val"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/txt_total"
-        android:layout_width="313dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="116dp"
-        android:gravity="center"
-        android:text="@string/total_label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btn_continue"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="158dp"
-        android:text="@string/btn_continue"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="20"
+        android:text="@string/driver_label"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_car" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.669" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#000000"
+        android:shadowDx="20"
+        android:text="@string/time_label"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
 
     <Button
         android:id="@+id/btn_back"
-        android:layout_width="63dp"
-        android:layout_height="32dp"
+        android:layout_width="72dp"
+        android:layout_height="60dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:text="@string/btn_back"
@@ -80,5 +70,15 @@
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="317dp"
+        android:layout_height="409dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/duckman" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
