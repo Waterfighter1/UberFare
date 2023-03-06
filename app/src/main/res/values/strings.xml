@@ -13,6 +13,7 @@
     <string name="btn_continue">CONTINUE</string>
     <string name="btn_estimate">Estimate Cost</string>
     <string name="btn_back">Back To Start</string>
+    <string name="btn_back_one">Back</string>
     <string name="btn_req">Request Ride Now</string>
 
     <string-array name="cars_choices">
