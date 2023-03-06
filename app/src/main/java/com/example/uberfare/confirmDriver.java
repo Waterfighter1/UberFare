@@ -17,18 +17,27 @@ public class confirmDriver extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_driver);
 
+        // Defining The Back Button
         Button buttonBack = (Button) findViewById(R.id.btn_back);
+        // Defining The Time Text
+        TextView timeText = (TextView) findViewById(R.id.txt_time);
+
+        // Adding The Back Buttons Listener
         buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Starting The New Activity (Display Price)
                 startActivity(new Intent(confirmDriver.this, displayPrice.class));
             }
         });
 
+        // Define Random Number
         Random rand = new Random();
+
+        // Generate Random Number (1-60)
         int estimated_minutes = rand.nextInt(61);
 
-        TextView timeText = (TextView) findViewById(R.id.txt_time);
+        // Set The Text Of The Time
         timeText.setText(String.valueOf(timeText.getText()) + " " + String.valueOf(estimated_minutes) + " minutes!");
     }
 
